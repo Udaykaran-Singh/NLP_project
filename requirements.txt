@@ -1,0 +1,30 @@
+# NLP Pipeline — Python dependencies
+# Recommended: Python 3.11 in a fresh virtual environment.
+# Install with: python -m pip install -r requirements.txt
+
+# Numerical / image processing (pinned to avoid NumPy 2.x ABI conflicts)
+numpy==1.26.4
+opencv-python==4.10.0.84
+scipy>=1.11,<1.15
+
+# OCR (also requires the Tesseract executable installed separately)
+pytesseract>=0.3.10,<0.4
+
+# Audio input, conversion, and speech recognition
+SpeechRecognition>=3.10,<4
+pydub>=0.25.1,<0.26
+sounddevice>=0.4.6,<0.6
+
+# Local Whisper speech-to-text
+openai-whisper>=20231117
+
+# Grammar correction (local LanguageTool needs Java and may download resources)
+language-tool-python>=3.4,<4
+
+# Summarization / NLP
+nltk>=3.8.1,<4
+transformers>=4.40,<5
+torch>=2.2
+
+# Text-to-speech (online service; requires internet)
+edge-tts>=6.1,<8
